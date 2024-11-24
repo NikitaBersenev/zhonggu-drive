@@ -7,7 +7,7 @@ import (
 )
 
 type Config struct {
-	Env             string `yaml:".env" .env-default:"local"`
+	Env             string `yaml:"env" .env-default:"local"`
 	StoragePath     string `yaml:"storage_path" .env-default:"./storage/storage.db"`
 	StorageAddress  string `yaml:"storage_address" .env-default:"./storage/storage.db"`
 	StorageUser     string `yaml:"storage_user" .env-default:"user"`
