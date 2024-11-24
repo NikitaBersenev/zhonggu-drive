@@ -1,0 +1,10 @@
+env: "local" # local, dev, prod
+storage_path: "./storage/storage.db" # for sqlite
+storage_address: "localhost:5432"
+storage_type: "sqlite" # sqlite, postgresql
+storage_user: "user_db"
+storage_password: "password_db"
+http_server:
+  address: "localhost:5432"
+  timeout: 4s
+  idle_timeout: 60s
