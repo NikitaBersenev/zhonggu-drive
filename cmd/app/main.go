@@ -30,7 +30,13 @@ func main() {
 		log.Error("failed to init storage", sl.Err(err)) // как без костылей?
 		os.Exit(1)
 	}
-	//
+
+	id, err := storage.SaveMusic("group1", "music1")
+	if err != nil {
+		log.Error("failed to save music", sl.Err(err))
+	}
+
+	log.Info("music id is", id)
 	_ = storage
 
 	//fmt.Println("rest music api")
